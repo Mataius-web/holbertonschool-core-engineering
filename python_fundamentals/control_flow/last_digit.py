@@ -4,11 +4,11 @@ if number >= 0:
     digit = number % 10
 elif number < 0:
     digit = (number - number - number) % 10
-if digit > 5:
-    print(f"Last digit of {number} is {digit} and is greater than 5")
+if number < 0:
+    print(f"Last digit of {number} is -{digit} and is less than 6 and not 0")
 elif digit == 0:
     print(f"Last digit of {number} is {digit} and is 0")
-elif number < 0:
-    print(f"Last digit of {number} is -{digit} and is less than 6 and not 0")
+elif digit > 5:
+    print(f"Last digit of {number} is {digit} and is greater than 5")
 else:
     print(f"Last digit of {number} is {digit} and is less than 6 and not 0")
