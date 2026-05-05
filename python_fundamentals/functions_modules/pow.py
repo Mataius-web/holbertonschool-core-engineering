@@ -2,9 +2,11 @@
 
 def pow(a, b):
     result = 1
-    if b == 0:
-        return result
-    else:
-        for i in range(b):
-            result = result * a
+    power = abs(b)
+
+    for i in range(power):
+        result *= a
+
+    if b < 0:
+        return 1 / result
     return result
